@@ -1,0 +1,10 @@
+# Copy to datasets.local.toml and edit only the values you want to override.
+# Relative paths resolve from the repository root. Absolute Linux paths also work.
+# The selected directory must contain the configured level subdirectories.
+data_root = "data/raw"
+download_dir = "data/raw"
+level = "gau"
+start = "2022-03-09"
+end = "2022-03-15"
+# Set a verified direct CSV download template only when downloads are needed.
+url_template = ""

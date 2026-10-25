@@ -1,0 +1,18 @@
+# Relative paths are resolved from the repository root, never the terminal's cwd.
+# Override this file with config/datasets.local.toml (excluded from Git).
+data_root = "../MITMA 9-03-15-03"
+download_dir = "data/raw"
+level = "gau"
+start = "2022-03-09"
+end = "2022-03-15"
+
+# Paste a verified direct-download URL template before using --download.
+# Available placeholders: {date} (YYYYMMDD), {year}, {month}, {day}, {level}.
+# No source URL is assumed: the provider has different dataset versions.
+url_template = ""
+
+[directories]
+distritos = "DISTITOS"
+municipios = "MUNICIPIOS"
+gau = "GAU"
+calidad = "CALIDAD"
