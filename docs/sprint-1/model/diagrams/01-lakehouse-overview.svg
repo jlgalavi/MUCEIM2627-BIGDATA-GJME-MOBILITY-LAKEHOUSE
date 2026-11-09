@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1580" height="890" viewBox="0 0 1580 890" role="img" aria-labelledby="title desc">
+<title id="title">01  Mobility lakehouse architecture</title><desc id="desc">Target design • GAU and municipalities, 9–15 March 2023 • Layers are planned, not integrated</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#657892"/></marker></defs>
+<rect width="1580" height="890" fill="#f7f9fc"/>
+<text x="42" y="46" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700" fill="#172b46">01  Mobility lakehouse architecture</text>
+<text x="42" y="77" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">Target design • GAU and municipalities, 9–15 March 2023 • Layers are planned, not integrated</text>
+<text x="42" y="135" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#2253a0">01  SOURCES</text>
+<text x="350" y="135" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#986020">02  BRONZE</text>
+<text x="658" y="135" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#34697b">03  SILVER</text>
+<text x="966" y="135" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#8a690c">04  GOLD</text>
+<text x="1274" y="135" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#2253a0">05  CONSUMPTION</text>
+<rect x="42" y="165" width="264" height="170" rx="12" fill="white" stroke="#2253a0" stroke-width="1.5"/>
+<path d="M56 166 H292" stroke="#2253a0" stroke-width="4"/>
+<text x="60" y="199" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700" fill="#2253a0">Public data</text>
+<text x="60" y="231" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">MITMA OD + exclusions</text>
+<text x="60" y="258" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">INE source datasets</text>
+<text x="60" y="285" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">Geographies: pending</text>
+<polyline points="306,248 342,248" fill="none" stroke="#657892" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="350" y="165" width="264" height="170" rx="12" fill="white" stroke="#986020" stroke-width="1.5"/>
+<path d="M364 166 H600" stroke="#986020" stroke-width="4"/>
+<text x="368" y="199" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700" fill="#986020">Raw evidence</text>
+<text x="368" y="231" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">Source-specific tables</text>
+<text x="368" y="258" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">Original values + lineage</text>
+<text x="368" y="285" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">File and batch manifest</text>
+<polyline points="614,248 650,248" fill="none" stroke="#657892" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="658" y="165" width="264" height="170" rx="12" fill="white" stroke="#34697b" stroke-width="1.5"/>
+<path d="M672 166 H908" stroke="#34697b" stroke-width="4"/>
+<text x="676" y="199" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700" fill="#34697b">Conformed entities</text>
+<text x="676" y="231" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">Segmented OD trips</text>
+<text x="676" y="258" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">Zones, aliases, crosswalks</text>
+<text x="676" y="285" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">Indicators + pair distances</text>
+<polyline points="922,248 958,248" fill="none" stroke="#657892" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="966" y="165" width="264" height="170" rx="12" fill="white" stroke="#8a690c" stroke-width="1.5"/>
+<path d="M980 166 H1216" stroke="#8a690c" stroke-width="4"/>
+<text x="984" y="199" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700" fill="#8a690c">Analytical products</text>
+<text x="984" y="231" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">Daily hourly OD totals</text>
+<text x="984" y="258" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">Comparable-day profiles</text>
+<text x="984" y="285" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">Gravity inputs + estimates</text>
+<polyline points="1230,248 1266,248" fill="none" stroke="#657892" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="1274" y="165" width="264" height="170" rx="12" fill="white" stroke="#2253a0" stroke-width="1.5"/>
+<path d="M1288 166 H1524" stroke="#2253a0" stroke-width="4"/>
+<text x="1292" y="199" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700" fill="#2253a0">Expert analysis</text>
+<text x="1292" y="231" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">SQL and notebooks</text>
+<text x="1292" y="258" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">Figures and clustering</text>
+<text x="1292" y="285" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">Interpretation + review</text>
+<rect x="42" y="382" width="480" height="160" rx="12" fill="white" stroke="#2253a0" stroke-width="1.5"/>
+<path d="M56 383 H508" stroke="#2253a0" stroke-width="4"/>
+<text x="60" y="416" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700" fill="#2253a0">Current executable evidence</text>
+<text x="60" y="448" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">File selection and sample notebook</text>
+<text x="60" y="475" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">20 read-only terminal queries</text>
+<text x="60" y="502" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">Environment and DuckLake smoke checks</text>
+<rect x="550" y="382" width="480" height="160" rx="12" fill="white" stroke="#34697b" stroke-width="1.5" stroke-dasharray="7 5"/>
+<path d="M564 383 H1016" stroke="#34697b" stroke-width="4"/>
+<text x="568" y="416" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700" fill="#34697b">Integration still required</text>
+<text x="568" y="448" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">Source readers and persistent tables</text>
+<text x="568" y="475" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">Zone / INE alignment and geometries</text>
+<text x="568" y="502" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">Reviewed transforms and quality checks</text>
+<rect x="1058" y="382" width="480" height="160" rx="12" fill="white" stroke="#8a690c" stroke-width="1.5" stroke-dasharray="7 5"/>
+<path d="M1072 383 H1524" stroke="#8a690c" stroke-width="4"/>
+<text x="1076" y="416" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700" fill="#8a690c">Analytical limits</text>
+<text x="1076" y="448" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">One week is not an annual profile</text>
+<text x="1076" y="475" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">District trips are from March 2022</text>
+<text x="1076" y="502" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">No gravity ranking is validated</text>
+<rect x="42" y="590" width="1496" height="100" rx="12" fill="#eaf0f8" stroke="#d5dfed" stroke-width="1.5"/>
+<text x="64" y="626" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700" fill="#2253a0">PROCESSING  DuckDB executes SQL across the three layers</text>
+<text x="64" y="660" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" fill="#172b46">STORAGE  DuckLake tables: local catalog + local data first; cloud deployment later</text>
+<rect x="42" y="714" width="1496" height="94" rx="12" fill="white" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="64" y="748" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#172b46">CROSS-CUTTING CONTRACTS</text>
+<text x="64" y="780" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" fill="#52647b">Provenance  /  source versions  /  coverage and rejects  /  safe join cardinality  /  rerun policy</text>
+<text x="42" y="852" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="400" fill="#52647b">Solid boxes describe target components. Dashed boxes highlight pending dependencies or work.</text>
+</svg>

@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1580" height="1100" viewBox="0 0 1580 1100" role="img" aria-labelledby="title desc">
+<title id="title">03  Silver logical schema and join paths</title><desc id="desc">Proposed keys and relationships • No geography or indicator join is assumed to be validated</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#657892"/></marker></defs>
+<rect width="1580" height="1100" fill="#f7f9fc"/>
+<text x="42" y="46" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700" fill="#172b46">03  Silver logical schema and join paths</text>
+<text x="42" y="77" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">Proposed keys and relationships • No geography or indicator join is assumed to be validated</text>
+<rect x="42" y="125" width="448" height="190" rx="12" fill="white" stroke="#34697b" stroke-width="1.5"/>
+<path d="M56 126 H476" stroke="#34697b" stroke-width="4"/>
+<text x="60" y="159" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700" fill="#34697b">zone_aliases</text>
+<text x="60" y="191" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">PK  source product + level + version</text>
+<text x="60" y="218" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">      + original zone value</text>
+<text x="60" y="245" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">FK  canonical zone key</text>
+<text x="60" y="272" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">Source labels remain in trip records</text>
+<rect x="566" y="125" width="448" height="190" rx="12" fill="white" stroke="#34697b" stroke-width="1.5"/>
+<path d="M580 126 H1000" stroke="#34697b" stroke-width="4"/>
+<text x="584" y="159" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700" fill="#34697b">zones</text>
+<text x="584" y="191" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">PK  level + zoning_version + zone_id</text>
+<text x="584" y="218" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">Name, geometry and centroid</text>
+<text x="584" y="245" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">Versioned coordinate system</text>
+<text x="584" y="272" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">One row per canonical zone</text>
+<rect x="1090" y="125" width="448" height="190" rx="12" fill="white" stroke="#34697b" stroke-width="1.5"/>
+<path d="M1104 126 H1524" stroke="#34697b" stroke-width="4"/>
+<text x="1108" y="159" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700" fill="#34697b">zone_crosswalk</text>
+<text x="1108" y="191" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">PK  zone key + geography key</text>
+<text x="1108" y="218" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">      + mapping_version + validity</text>
+<text x="1108" y="245" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">FK  zone / indicator geography</text>
+<text x="1108" y="272" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">Weights only with a justified method</text>
+<polyline points="490,220 558,220" fill="none" stroke="#657892" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="507" y="207" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="400" fill="#52647b">N:1</text>
+<polyline points="1014,220 1082,220" fill="none" stroke="#657892" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="1031" y="207" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="400" fill="#52647b">1:N</text>
+<rect x="42" y="410" width="448" height="220" rx="12" fill="white" stroke="#34697b" stroke-width="1.5"/>
+<path d="M56 411 H476" stroke="#34697b" stroke-width="4"/>
+<text x="60" y="444" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700" fill="#34697b">od_trips</text>
+<text x="60" y="476" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">ID  product + source record identity</text>
+<text x="60" y="503" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">Original origin / destination + segments</text>
+<text x="60" y="530" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">FK  origin zone / destination zone</text>
+<text x="60" y="557" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">trip_date, hour_slot and source level</text>
+<text x="60" y="584" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">trip_count, trip_km and quality status</text>
+<rect x="566" y="410" width="448" height="220" rx="12" fill="white" stroke="#34697b" stroke-width="1.5"/>
+<path d="M580 411 H1000" stroke="#34697b" stroke-width="4"/>
+<text x="584" y="444" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700" fill="#34697b">od_distances</text>
+<text x="584" y="476" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">PK  origin + destination zone keys</text>
+<text x="584" y="503" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">      + distance_method</text>
+<text x="584" y="530" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">distance_km, CRS and geometry version</text>
+<text x="584" y="557" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">Directed pair; intra-zone policy explicit</text>
+<text x="584" y="584" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">Only validated spatial distances</text>
+<rect x="1090" y="410" width="448" height="220" rx="12" fill="white" stroke="#34697b" stroke-width="1.5"/>
+<path d="M1104 411 H1524" stroke="#34697b" stroke-width="4"/>
+<text x="1108" y="444" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700" fill="#34697b">indicator_geographies</text>
+<text x="1108" y="476" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">PK  geography level + version + ID</text>
+<text x="1108" y="503" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">Authoritative native INE geography</text>
+<text x="1108" y="530" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">Province, municipality or other level</text>
+<text x="1108" y="557" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">No inferred match by code similarity</text>
+<text x="1108" y="584" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">Reference set / physical form proposed</text>
+<polyline points="180,410 180,350 714,350 714,321" fill="none" stroke="#657892" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="250" y="341" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="400" fill="#52647b">Two optional N:1 lookups after mapping</text>
+<polyline points="790,410 790,321" fill="none" stroke="#657892" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="806" y="369" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="400" fill="#52647b">Two N:1</text>
+<polyline points="1314,315 1314,402" fill="none" stroke="#657892" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="1329" y="365" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="400" fill="#52647b">N:1</text>
+<rect x="42" y="732" width="448" height="190" rx="12" fill="white" stroke="#34697b" stroke-width="1.5"/>
+<path d="M56 733 H476" stroke="#34697b" stroke-width="4"/>
+<text x="60" y="766" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700" fill="#34697b">quality_flags</text>
+<text x="60" y="798" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">Event identity + source / row locator</text>
+<text x="60" y="825" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">Reason, scope and applicable period</text>
+<text x="60" y="852" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">Parse issue / exclusion / censoring</text>
+<text x="60" y="879" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">Quality events can affect many records</text>
+<rect x="566" y="732" width="448" height="190" rx="12" fill="white" stroke="#2253a0" stroke-width="1.5"/>
+<path d="M580 733 H1000" stroke="#2253a0" stroke-width="4"/>
+<text x="584" y="766" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700" fill="#2253a0">Safe enrichment contract</text>
+<text x="584" y="798" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">Select indicator and category slice</text>
+<text x="584" y="825" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">Select one reference period / version</text>
+<text x="584" y="852" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">Check mapping and join cardinality</text>
+<text x="584" y="879" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">Reconcile trip totals after each join</text>
+<rect x="1090" y="732" width="448" height="190" rx="12" fill="white" stroke="#34697b" stroke-width="1.5"/>
+<path d="M1104 733 H1524" stroke="#34697b" stroke-width="4"/>
+<text x="1108" y="766" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700" fill="#34697b">ine_indicators</text>
+<text x="1108" y="798" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">PK  dataset + indicator + geography</text>
+<text x="1108" y="825" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">      + period + categories + version</text>
+<text x="1108" y="852" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">FK  native indicator geography</text>
+<text x="1108" y="879" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">value + unit + source provenance</text>
+<polyline points="1314,732 1314,638" fill="none" stroke="#657892" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="1330" y="687" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="400" fill="#52647b">N:1</text>
+<polyline points="266,732 266,638" fill="none" stroke="#657892" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="282" y="687" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="400" fill="#52647b">Attach by declared scope</text>
+<text x="42" y="983" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="400" fill="#172b46">Zone key = (territorial level, zoning version, canonical zone ID); both OD endpoints carry the full key.</text>
+<text x="42" y="1020" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="400" fill="#52647b">Aliases map source values to canonical zones. Crosswalks map canonical zones to native indicator geographies.</text>
+<text x="42" y="1054" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">Do not join all indicators or all mapping versions to every trip. Geometry and alias resolution may remain nullable while pending.</text>
+</svg>

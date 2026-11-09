@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="870" viewBox="0 0 1500 870" role="img" aria-labelledby="title desc">
+<title id="title">02  Bronze ingestion and provenance</title><desc id="desc">Preserve the files and original values; make every loaded record traceable</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#657892"/></marker></defs>
+<rect width="1500" height="870" fill="#f7f9fc"/>
+<text x="42" y="46" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700" fill="#172b46">02  Bronze ingestion and provenance</text>
+<text x="42" y="77" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">Preserve the files and original values; make every loaded record traceable</text>
+<rect x="42" y="125" width="420" height="168" rx="12" fill="white" stroke="#2253a0" stroke-width="1.5"/>
+<path d="M56 126 H448" stroke="#2253a0" stroke-width="4"/>
+<text x="60" y="159" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700" fill="#2253a0">1  Immutable source area</text>
+<text x="60" y="191" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">MITMA CSV.gz and quality CSV</text>
+<text x="60" y="218" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">INE CSV, XLSX and ZIP member</text>
+<text x="60" y="245" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">Future geography sources</text>
+<rect x="540" y="125" width="420" height="168" rx="12" fill="white" stroke="#986020" stroke-width="1.5"/>
+<path d="M554 126 H946" stroke="#986020" stroke-width="4"/>
+<text x="558" y="159" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700" fill="#986020">2  Source manifest</text>
+<text x="558" y="191" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">Product + file hash + period</text>
+<text x="558" y="218" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">Expected schema and territorial level</text>
+<text x="558" y="245" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">Source version and reader contract</text>
+<polyline points="462,208 532,208" fill="none" stroke="#657892" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="1038" y="125" width="420" height="168" rx="12" fill="white" stroke="#986020" stroke-width="1.5"/>
+<path d="M1052 126 H1444" stroke="#986020" stroke-width="4"/>
+<text x="1056" y="159" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700" fill="#986020">3  Source-specific readers</text>
+<text x="1056" y="191" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">Explicit headers, delimiters, encoding</text>
+<text x="1056" y="218" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">Preserve codes, markers and units</text>
+<text x="1056" y="245" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">Record member / sheet / row locator</text>
+<polyline points="960,208 1030,208" fill="none" stroke="#657892" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="1248,293 1248,345 750,345 750,389" fill="none" stroke="#657892" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="775" y="334" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="400" fill="#52647b">Parse with visible accounting</text>
+<rect x="42" y="395" width="420" height="202" rx="12" fill="white" stroke="#986020" stroke-width="1.5"/>
+<path d="M56 396 H448" stroke="#986020" stroke-width="4"/>
+<text x="60" y="429" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700" fill="#986020">MITMA raw tables</text>
+<text x="60" y="461" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">mitma_od_raw</text>
+<text x="60" y="488" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">mitma_quality_raw</text>
+<text x="60" y="515" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">Native product and source strings</text>
+<text x="60" y="542" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">No analytical aggregation</text>
+<rect x="540" y="395" width="420" height="202" rx="12" fill="white" stroke="#986020" stroke-width="1.5"/>
+<path d="M554 396 H946" stroke="#986020" stroke-width="4"/>
+<text x="558" y="429" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700" fill="#986020">INE raw table family</text>
+<text x="558" y="461" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">ine_population_raw / ine_income_raw</text>
+<text x="558" y="488" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">ine_gdp_raw / ine_employment_raw</text>
+<text x="558" y="515" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">Native periods and categories</text>
+<text x="558" y="542" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">Different schemas remain separate</text>
+<rect x="1038" y="395" width="420" height="202" rx="12" fill="white" stroke="#986020" stroke-width="1.5" stroke-dasharray="7 5"/>
+<path d="M1052 396 H1444" stroke="#986020" stroke-width="4"/>
+<text x="1056" y="429" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700" fill="#986020">Geography raw tables</text>
+<text x="1056" y="461" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">zoning_raw / crosswalk_raw</text>
+<text x="1056" y="488" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">Source geometry, version and CRS</text>
+<text x="1056" y="515" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">Acquisition and readers pending</text>
+<text x="1056" y="542" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">Retain authoritative identifiers</text>
+<polyline points="750,366 252,366 252,389" fill="none" stroke="#657892" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="750,366 1248,366 1248,389" fill="none" stroke="#657892" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="42" y="633" width="1416" height="95" rx="12" fill="#f7efe4" stroke="#dac6ac" stroke-width="1.5"/>
+<text x="64" y="668" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#986020">RECORD LINEAGE</text>
+<text x="64" y="702" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" fill="#172b46">file hash + product + member / sheet + stable source locator  •  batch ID  •  load timestamp</text>
+<text x="42" y="777" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="400" fill="#172b46">Load accounting: source records = loaded records + rejected records, under a documented counting rule.</text>
+<text x="42" y="814" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" fill="#52647b">Same source identity and hash: skip a completed load. Corrected versions: replace only through an explicit reload policy.</text>
+</svg>
