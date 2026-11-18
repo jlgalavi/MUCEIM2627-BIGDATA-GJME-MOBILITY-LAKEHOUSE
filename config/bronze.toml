@@ -1,0 +1,41 @@
+start = "2023-03-09"
+end = "2023-03-15"
+source_dir = "../DATA"
+download_dir = "data/raw"
+lake_dir = "data/lake"
+memory_limit = "2GB"
+threads = 2
+
+[mitma]
+base_url = "https://movilidad-opendata.mitma.es/"
+local_dir = "MITMA 9_03-15_03"
+trips_url = "estudios_basicos/por-{level}/viajes/ficheros-diarios/{month}/{day}_Viajes_{level}.csv.gz"
+quality_url = "estudios_basicos/calidad/ficheros-diarios/{month}/{day}_distritos_descartados.csv"
+
+[ine]
+empleo = "INE/**/65349.csv"
+pib = "INE/**/80109.csv"
+renta = "INE/**/30824.xlsx"
+empleo_url = "https://www.ine.es/jaxiT3/files/t/es/csv_bdsc/65349.csv"
+pib_url = "https://www.ine.es/jaxiT3/files/t/es/csv_bdsc/80109.csv"
+renta_url = "https://www.ine.es/jaxiT3/files/t/xlsx/30824.xlsx"
+
+[aemet]
+base_url = "https://opendata.aemet.es/opendata/api/"
+stations_endpoint = "valores/climatologicos/inventarioestaciones/todasestaciones/"
+observations_endpoint = "valores/climatologicos/diarios/datos/fechaini/{start}T00:00:00UTC/fechafin/{end}T23:59:59UTC/todasestaciones/"
+
+[calendar]
+source_url = "https://www.boe.es/buscar/doc.php?id=BOE-A-2022-16755"
+# National/autonomous holidays reviewed for this interval; local holidays excluded.
+# Outside it, fail instead of assuming that there are no holidays.
+verified_start = "2023-03-09"
+verified_end = "2023-03-15"
+holidays = []
+
+[territory]
+crosswalk = "zonificacion/relacion_ine_zonificacionMitma.csv"
+population_reference_date = "2021-01-01"
+crs = "EPSG:25830"
+levels = ["distritos", "municipios", "GAU"]
+suffixes = ["distritos", "municipios", "gaus"]
